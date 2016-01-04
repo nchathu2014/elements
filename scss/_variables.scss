@@ -229,7 +229,9 @@ $pe-header-logo-sprite-name: 'pearson-sprite.svg' !default;
 $pe-header-logo-sprite-height: 16px !default;
 $pe-header-logo-margin-x: 14px !default;
 
-$pe-header-nav-link-active-bg: pe-color(chalk-white) !default;
+$pe-header-nav-link-active-color: pe-color(ink-black) !default;
+$pe-header-nav-link-active-hover-color: pe-palette(grey, grey-darker) !default;
+$pe-header-nav-link-active-bg: pe-color(ice-blue) !default;
 $pe-header-nav-link-padding-x: 15px !default;
 
 $pe-header-bg-inverse: #f2f2f2 !default;

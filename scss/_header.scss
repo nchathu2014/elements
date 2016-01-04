@@ -85,6 +85,16 @@
 
 .pe-header__nav-item--active {
   background: $pe-header-nav-link-active-bg;
+
+  > a {
+    color: $pe-header-nav-link-active-color;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $pe-header-nav-link-active-hover-color;
+    }
+  }
 }
 
 // Inverse
