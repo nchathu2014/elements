@@ -41,7 +41,7 @@ $pe-colors: (
 );
 
 $pe-palettes: (
-  grayscale: (
+  grey: (
     grey-lightest: scale-color(map-get-strict($pe-colors, graphite-grey), $lightness: 90%),
     grey-lighter: scale-color(map-get-strict($pe-colors, graphite-grey), $lightness: 50%),
     grey: scale-color(map-get-strict($pe-colors, graphite-grey), $lightness: 20%),
@@ -186,37 +186,17 @@ $pe-btn-border-radius: 3px !default;
 $pe-btn-font-size: 0.875rem !default;
 $pe-btn-height: 28px !default;
 $pe-btn-padding: 0 11px !default;
+$btn-active-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3) !default;
 
-$pe-btn-default-bg: pe-color(pearson-blue) !default;
-$pe-btn-default-border: solid 1px pe-color(graphite-grey) !default;
-$pe-btn-default-text: $pe-label-secondary-color !default;
-$pe-btn-default-font-weight: $pe-label-font-weight !default;
-$pe-btn-default-hover-bg: pe-color(pearson-blue) !default;
-$pe-btn-default-hover-border: solid 1px pe-color(pearson-blue) !default;
-$pe-btn-default-hover-text: $pe-label-secondary-color !default;
-$pe-btn-default-active-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3) !default;
-$pe-btn-default-disabled-bg: pe-color(pearson-blue) !default;
-$pe-btn-default-disabled-text: pe-color(pearson-blue) !default;
+$pe-btn-default-text: pe-palette(grey, grey-darkest) !default;
+$pe-btn-default-bg: pe-palette(grey, grey-lightest) !default;
+$pe-btn-default-border-color: pe-palette(grey, grey-lighter) !default;
 
+$pe-btn-primary-text: pe-color(chalk-white) !default;
 $pe-btn-primary-bg: pe-color(pearson-blue) !default;
-$pe-btn-primary-border: solid 1px pe-color(pearson-blue) !default;
-$pe-btn-primary-text: $pe-label-inverse-color !default;
-$pe-btn-primary-font-weight: $pe-label-inverse-font-weight !default;
-$pe-btn-primary-hover-bg: pe-color(pearson-blue) !default;
-$pe-btn-primary-hover-border: solid 1px pe-color(pearson-blue) !default;
-$pe-btn-primary-hover-text: $pe-label-inverse-color !default;
-$pe-btn-primary-active-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3) !default;
-$pe-btn-primary-disabled-bg: pe-color(pearson-blue) !default;
-$pe-btn-primary-disabled-text: pe-color(pearson-blue) !default;
+$pe-btn-primary-border-color: darken(pe-color(pearson-blue), 10%) !default;
 
-$pe-btn-link-bg: none !default;
-$pe-btn-link-border: 0 !default;
 $pe-btn-link-text: $pe-link-color !default;
-$pe-btn-link-hover-bg: $pe-btn-link-bg !default;
-$pe-btn-link-hover-border: $pe-btn-link-border !default;
-$pe-btn-link-hover-text: $pe-link-hover-color !default;
-$pe-btn-link-disabled-bg: 0 !default;
-$pe-btn-link-disabled-text: pe-color(pearson-blue) !default;
 
 $pe-btn-small-height: 24px !default;
 $pe-btn-small-font-size: $pe-label-small-font-size !default;

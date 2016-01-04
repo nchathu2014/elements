@@ -1,3 +1,57 @@
+@mixin pe-btn-variant($color, $bg: null, $border-color: null) {
+  color: $color;
+
+  @if $bg {
+    background: $bg;
+  } @else {
+    background: 0;
+  }
+
+  @if $border-color {
+    border: solid 1px $border-color;
+  } @else {
+    border: 0;
+  }
+
+  border-radius: $pe-btn-border-radius;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: darken($color, 5%);
+
+    @if $bg {
+      background: darken($bg, 10%);
+    }
+
+    @if $border-color {
+      border-color: darken($border-color, 10%);
+    }
+  }
+
+  &:active {
+    box-shadow: $btn-active-shadow;
+  }
+
+  &:disabled,
+  &.pe-btn--disabled {
+    cursor: default;
+    border: 0;
+    color: lighten($color, 10%);
+
+    @if $bg {
+      background: scale-color($bg, $lightness: 30%, $saturation: -60%);
+    }
+
+    box-shadow: none;
+    text-decoration: none;
+  }
+}
+
 @mixin pe-btn(
   $bg,
   $border,

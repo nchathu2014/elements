@@ -1,17 +1,4 @@
 .pe-btn {
-  @include pe-btn(
-    $pe-btn-default-bg,
-    $pe-btn-default-border,
-    $pe-btn-default-text,
-    $pe-btn-default-hover-bg,
-    $pe-btn-default-hover-border,
-    $pe-btn-default-hover-text,
-    $pe-btn-default-disabled-bg,
-    $pe-btn-default-disabled-text,
-    $pe-btn-default-font-weight,
-    $pe-btn-default-active-shadow
-  );
-
   display: inline-block;
   vertical-align: middle;
   cursor: pointer;
@@ -21,32 +8,24 @@
   padding: $pe-btn-padding;
 }
 
+.pe-btn--default {
+  @include pe-btn-variant(
+    $pe-btn-default-text,
+    $pe-btn-default-bg,
+    $pe-btn-default-border-color
+  );
+}
+
 .pe-btn--primary {
-  @include pe-btn(
-    $pe-btn-primary-bg,
-    $pe-btn-primary-border,
+  @include pe-btn-variant(
     $pe-btn-primary-text,
-    $pe-btn-primary-hover-bg,
-    $pe-btn-primary-hover-border,
-    $pe-btn-primary-hover-text,
-    $pe-btn-primary-disabled-bg,
-    $pe-btn-primary-disabled-text,
-    $pe-btn-primary-font-weight,
-    $pe-btn-primary-active-shadow
+    $pe-btn-primary-bg,
+    $pe-btn-primary-border-color
   );
 }
 
 .pe-btn--link {
-  @include pe-btn(
-    $pe-btn-link-bg,
-    $pe-btn-link-border,
-    $pe-btn-link-text,
-    $pe-btn-link-hover-bg,
-    $pe-btn-link-hover-border,
-    $pe-btn-link-hover-text,
-    $pe-btn-link-disabled-bg,
-    $pe-btn-link-disabled-text
-  );
+  @include pe-btn-variant($pe-btn-link-text);
 
   text-decoration: underline;
 

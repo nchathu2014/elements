@@ -7,7 +7,7 @@ section: elements
 Use a button to represent a user action.
 
 {{#demo}}
-<button class="pe-btn">Default</button>
+<button class="pe-btn pe-btn--default">Default</button>
 <button class="pe-btn pe-btn--primary">Primary</button>
 {{/demo}}
 
@@ -16,10 +16,10 @@ Use a button to represent a user action.
 Button classes can be used with `<div>`, `<span>`, `<a>`, `<button>`, and `<input>` elements.
 
 {{#demo}}
-<div class="pe-btn" tabindex="0" role="button">Div</div>
-<a href="#" class="pe-btn" role="button">Link</a>
-<button class="pe-btn">Button</button>
-<input type="submit" value="Submit" class="pe-btn">
+<div class="pe-btn pe-btn--default" tabindex="0" role="button">Div</div>
+<a href="#" class="pe-btn pe-btn--default" role="button">Link</a>
+<button class="pe-btn pe-btn--default">Button</button>
+<input type="submit" value="Submit" class="pe-btn pe-btn--default">
 {{/demo}}
 
 <aside>
@@ -40,7 +40,7 @@ In some cases, it may be desirable to style a button as a link.
 Buttons can be disabled when an action is not available to the user for the current context.
 
 {{#demo}}
-<button class="pe-btn" disabled>Default</button>
+<button class="pe-btn pe-btn--default" disabled>Default</button>
 <button class="pe-btn pe-btn--primary" disabled>Primary</button>
 <button class="pe-btn pe-btn--link" disabled>Link</button>
 {{/demo}}
@@ -48,7 +48,7 @@ Buttons can be disabled when an action is not available to the user for the curr
 For elements that do not support the `disabled` attribute, use `pe-btn--disabled`.
 
 {{#demo}}
-<div class="pe-btn pe-btn--disabled">Not a button</div>
+<div class="pe-btn pe-btn--default pe-btn--disabled">Not a button</div>
 {{/demo}}
 
 ### Sizes
@@ -56,8 +56,8 @@ For elements that do not support the `disabled` attribute, use `pe-btn--disabled
 Buttons can be made smaller or larger.
 
 {{#demo}}
-<button class="pe-btn pe-btn--small">Small</button>
-<button class="pe-btn pe-btn--large">Large</button>
+<button class="pe-btn pe-btn--default pe-btn--small">Small</button>
+<button class="pe-btn pe-btn--default pe-btn--large">Large</button>
 <button class="pe-btn pe-btn--link pe-btn--small">Small link</button>
 <button class="pe-btn pe-btn--link pe-btn--large">Large link</button>
 {{/demo}}
@@ -67,5 +67,5 @@ Buttons can be made smaller or larger.
 When the width of the button's text exceeds the container width, it will be truncated with an ellipsis. <strong>However, you should generally avoid using long text strings with buttons.</strong>
 
 {{#demo}}
-<button class="pe-btn" style="max-width: 200px">The quick brown fox jumps over the lazy dog.</button>
+<button class="pe-btn pe-btn--default" style="max-width: 200px">The quick brown fox jumps over the lazy dog.</button>
 {{/demo}}

@@ -1,0 +1,3 @@
+@function pe-palette($palette, $color) {
+  @return map-get-strict(map-get-strict($pe-palettes, $palette), $color);
+}
