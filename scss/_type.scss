@@ -106,6 +106,17 @@ kbd {
   }
 }
 
+// Font family helpers
+//
+
+.pe-text-sans-serif {
+  font-family: pe-font-family(default-sans-serif) !important;
+}
+
+.pe-text-serif {
+  font-family: pe-font-family(default-serif) !important;
+}
+
 // Leads
 //
 
