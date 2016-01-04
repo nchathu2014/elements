@@ -16,31 +16,28 @@ $pe-images-path: '../images/';
 //
 
 $pe-colors: (
-  // grayscale
-  pitch: #231f20,
-  gray-no-1: #565656,
-  brightly-lit: #e6e6e6,
-  off-white: #f2f2f2,
-  dirty-ice: #f8f8f8,
-  white: #ffffff,
-  boring: #a6a8ab,
-  sidewalk: #b3b3b3,
-  hairline-gray: #d0d0d0,
-  gray-wash: #aeaeae,
-  black: #000000,
-  gutenberg-black: #333333,
-  full-moon: #424242,
-  asphalt: #3f3f3f,
-  smoke-gray: #545454,
-
-  // colors
-  highlighter: #fdec2e,
-  royal-navy: #094877,
-  hyperdrive: #0d65a6,
-  basic-blue: #107aca,
-  sea: #0c5d99,
-  deep-sea: #0a4d80,
-  sky-blue: #9dc0db
+  // Brand colors
+  pearson-blue: #007fa3,
+  ink-black: #000000,
+  chalk-white: #ffffff,
+  // Primary colors
+  midnight-blue: #003057,
+  lime-green: #d2db0e,
+  ice-blue: #d4eae4,
+  graphite-grey: #505759,
+  // Supporting colors
+  ink-blue: #005a70,
+  grass-green: #008638,
+  // Accent colors
+  sunshine-yellow: #ffb81c,
+  juicy-orange: #ea7600,
+  strawberry-red: #db0020,
+  marine-turquoise: #12b2a6,
+  royal-purple: #9e007e,
+  hot-pink: #ea067e,
+  fresh-green: #84bd00,
+  // Utility colors
+  highlighter: #fdec2e
 );
 
 // Responsive breakpoints
@@ -72,13 +69,13 @@ $pe-font-families: (
 // Links
 //
 
-$pe-link-color: pe-color(hyperdrive) !default;
-$pe-link-hover-color: pe-color(royal-navy) !default;
+$pe-link-color: pe-color(pearson-blue) !default;
+$pe-link-hover-color: scale-color(pe-color(pearson-blue), $lightness: -10%) !default;
 
 // Headings
 //
 
-$pe-text-heading-small-color: pe-color(smoke-gray) !default;
+$pe-text-heading-small-color: pe-color(graphite-grey) !default;
 $pe-text-heading-small-font-size: 0.8rem !default;
 
 // Inline text
@@ -86,7 +83,7 @@ $pe-text-heading-small-font-size: 0.8rem !default;
 
 $pe-text-mark-bg: pe-color(highlighter) !default;
 
-$pe-text-strikethrough-color: pe-color(gray-no-1) !default;
+$pe-text-strikethrough-color: pe-color(graphite-grey) !default;
 
 $pe-text-small-line-height: 1rem !default;
 $pe-text-small-font-weight: normal !default;
@@ -95,22 +92,22 @@ $pe-text-small-font-size: inherit !default;
 // Code
 //
 
-$pe-text-code-color: pe-color(smoke-gray) !default;
+$pe-text-code-color: pe-color(graphite-grey) !default;
 
-$pe-text-kbd-bg: pe-color(gutenberg-black) !default;
-$pe-text-kbd-color: pe-color(white) !default;
+$pe-text-kbd-bg: pe-color(ink-black) !default;
+$pe-text-kbd-color: pe-color(chalk-white) !default;
 
 // Body copy
 //
 
-$pe-copy-color: pe-color(pitch) !default;
+$pe-copy-color: pe-color(ink-black) !default;
 $pe-copy-font-size: 1rem !default;
 $pe-copy-line-height: 1.375 !default;
 
 // Titles
 //
 
-$pe-title-color: pe-color(black) !default;
+$pe-title-color: pe-color(ink-black) !default;
 $pe-title-font-weight: normal !default;
 $pe-title-font-size: 1.124rem !default;
 $pe-title-line-height: 1.375rem !default;
@@ -133,7 +130,7 @@ $pe-title-extra-large-sm-line-height: 2.25rem !default;
 // Leads
 //
 
-$pe-lead-color: pe-color(pitch) !default;
+$pe-lead-color: pe-color(ink-black) !default;
 $pe-lead-font-weight: 200 !default;
 $pe-lead-font-size: 1.125rem !default;
 $pe-lead-line-height: 1.5rem !default;
@@ -145,12 +142,12 @@ $pe-lead-sm-line-height: 1.75rem !default;
 // Labels
 //
 
-$pe-label-color: pe-color(pitch) !default;
+$pe-label-color: pe-color(ink-black) !default;
 $pe-label-font-size: 0.875rem !default;
 $pe-label-line-height: 1rem !default;
 $pe-label-font-weight: normal !default;
 
-$pe-label-secondary-color: pe-color(gray-no-1) !default;
+$pe-label-secondary-color: pe-color(graphite-grey) !default;
 
 $pe-label-small-font-size: 0.813rem !default;
 $pe-label-small-line-height: 0.9375rem !default;
@@ -160,15 +157,15 @@ $pe-label-large-line-height: 1.125rem !default;
 
 $pe-label-bold-font-weight: bold !default;
 
-$pe-label-inverse-color: pe-color(white) !default;
-$pe-label-secondary-inverse-color: pe-color(gray-wash) !default;
+$pe-label-inverse-color: pe-color(chalk-white) !default;
+$pe-label-secondary-inverse-color: pe-color(graphite-grey) !default;
 $pe-label-inverse-font-weight: 300 !default;
 
 // Aside
 //
 
-$pe-aside-bg: pe-color(dirty-ice) !default;
-$pe-aside-border-left: 5px solid pe-color(basic-blue) !default;
+$pe-aside-bg: pe-color(ice-blue) !default;
+$pe-aside-border-left: 5px solid pe-color(pearson-blue) !default;
 $pe-aside-padding: 15px !default;
 $pe-aside-margin: 15px !default;
 
@@ -180,27 +177,27 @@ $pe-btn-font-size: 0.875rem !default;
 $pe-btn-height: 28px !default;
 $pe-btn-padding: 0 11px !default;
 
-$pe-btn-default-bg: pe-color(dirty-ice) !default;
-$pe-btn-default-border: solid 1px pe-color(hairline-gray) !default;
+$pe-btn-default-bg: pe-color(pearson-blue) !default;
+$pe-btn-default-border: solid 1px pe-color(graphite-grey) !default;
 $pe-btn-default-text: $pe-label-secondary-color !default;
 $pe-btn-default-font-weight: $pe-label-font-weight !default;
-$pe-btn-default-hover-bg: pe-color(brightly-lit) !default;
-$pe-btn-default-hover-border: solid 1px pe-color(sidewalk) !default;
+$pe-btn-default-hover-bg: pe-color(pearson-blue) !default;
+$pe-btn-default-hover-border: solid 1px pe-color(pearson-blue) !default;
 $pe-btn-default-hover-text: $pe-label-secondary-color !default;
 $pe-btn-default-active-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3) !default;
-$pe-btn-default-disabled-bg: pe-color(off-white) !default;
-$pe-btn-default-disabled-text: pe-color(boring) !default;
+$pe-btn-default-disabled-bg: pe-color(pearson-blue) !default;
+$pe-btn-default-disabled-text: pe-color(pearson-blue) !default;
 
-$pe-btn-primary-bg: pe-color(basic-blue) !default;
-$pe-btn-primary-border: solid 1px pe-color(deep-sea) !default;
+$pe-btn-primary-bg: pe-color(pearson-blue) !default;
+$pe-btn-primary-border: solid 1px pe-color(pearson-blue) !default;
 $pe-btn-primary-text: $pe-label-inverse-color !default;
 $pe-btn-primary-font-weight: $pe-label-inverse-font-weight !default;
-$pe-btn-primary-hover-bg: pe-color(sea) !default;
-$pe-btn-primary-hover-border: solid 1px pe-color(deep-sea) !default;
+$pe-btn-primary-hover-bg: pe-color(pearson-blue) !default;
+$pe-btn-primary-hover-border: solid 1px pe-color(pearson-blue) !default;
 $pe-btn-primary-hover-text: $pe-label-inverse-color !default;
 $pe-btn-primary-active-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3) !default;
-$pe-btn-primary-disabled-bg: pe-color(sky-blue) !default;
-$pe-btn-primary-disabled-text: pe-color(white) !default;
+$pe-btn-primary-disabled-bg: pe-color(pearson-blue) !default;
+$pe-btn-primary-disabled-text: pe-color(pearson-blue) !default;
 
 $pe-btn-link-bg: none !default;
 $pe-btn-link-border: 0 !default;
@@ -209,7 +206,7 @@ $pe-btn-link-hover-bg: $pe-btn-link-bg !default;
 $pe-btn-link-hover-border: $pe-btn-link-border !default;
 $pe-btn-link-hover-text: $pe-link-hover-color !default;
 $pe-btn-link-disabled-bg: 0 !default;
-$pe-btn-link-disabled-text: pe-color(sky-blue) !default;
+$pe-btn-link-disabled-text: pe-color(pearson-blue) !default;
 
 $pe-btn-small-height: 24px !default;
 $pe-btn-small-font-size: $pe-label-small-font-size !default;
@@ -222,7 +219,7 @@ $pe-btn-large-padding: 0 19px !default;
 // Card
 //
 
-$pe-card-border: solid 1px pe-color(sidewalk) !default;
+$pe-card-border: solid 1px pe-color(graphite-grey) !default;
 $pe-card-margin-bottom: 15px !default;
 $pe-card-heading-padding: 15px !default;
 
@@ -231,10 +228,10 @@ $pe-card-heading-padding: 15px !default;
 
 $pe-header-height: 44px !default;
 $pe-header-height-lg: 54px !default;
-$pe-header-bg: pe-color(black) !default;
-$pe-header-text-color: pe-color(white) !default;
-$pe-header-link-color: pe-color(hairline-gray) !default;
-$pe-header-link-hover-color: pe-color(off-white) !default;
+$pe-header-bg: pe-color(ink-black) !default;
+$pe-header-text-color: pe-color(chalk-white) !default;
+$pe-header-link-color: pe-color(graphite-grey) !default;
+$pe-header-link-hover-color: pe-color(graphite-grey) !default;
 
 $pe-header-brand-font-size: 1.25rem !default;
 
@@ -242,7 +239,7 @@ $pe-header-logo-sprite-name: 'pearson-sprite.svg' !default;
 $pe-header-logo-sprite-height: 16px !default;
 $pe-header-logo-margin-x: 14px !default;
 
-$pe-header-nav-link-active-bg: pe-color(full-moon) !default;
+$pe-header-nav-link-active-bg: pe-color(chalk-white) !default;
 $pe-header-nav-link-padding-x: 15px !default;
 
 $pe-header-bg-inverse: #f2f2f2 !default;
@@ -253,8 +250,8 @@ $pe-header-nav-link-active-bg-inverse: #e6e6e6 !default;
 // Tables
 //
 
-$pe-table-striped-bg: pe-color(brightly-lit) !default;
-$pe-table-border-color: pe-color(hairline-gray) !default;
+$pe-table-striped-bg: pe-color(graphite-grey) !default;
+$pe-table-border-color: pe-color(graphite-grey) !default;
 
 // z-index
 //

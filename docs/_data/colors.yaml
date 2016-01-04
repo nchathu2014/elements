@@ -1,23 +1,61 @@
-colors:
-  - "pitch"
-  - "gray-no-1"
-  - "brightly-lit"
-  - "off-white"
-  - "dirty-ice"
-  - "white"
-  - "boring"
-  - "sidewalk"
-  - "hairline-gray"
-  - "gray-wash"
-  - "black"
-  - "gutenberg-black"
-  - "full-moon"
-  - "asphalt"
-  - "smoke-gray"
-  - "highlighter"
-  - "royal-navy"
-  - "hyperdrive"
-  - "basic-blue"
-  - "sea"
-  - "deep-sea"
-  - "sky-blue"
+-
+  Brand colors:
+    -
+      heading: Pearson Blue
+      color: pearson-blue
+    -
+      heading: Ink Black
+      color: ink-black
+    -
+      heading: Chalk White
+      color: chalk-white
+-
+  Primary colors:
+    -
+      heading: Midnight Blue
+      color: midnight-blue
+    -
+      heading: Lime Green
+      color: lime-green
+    -
+      heading: Ice Blue
+      color: ice-blue
+    -
+      heading: Graphite Grey
+      color: graphite-grey
+-
+  Supporting colors:
+    -
+      heading: Ink Blue
+      color: ink-blue
+    -
+      heading: Grass Green
+      color: grass-green
+-
+  Accent colors:
+    -
+      heading: Sunshine Yellow
+      color: sunshine-yellow
+    -
+      heading: Juicy Orange
+      color: juicy-orange
+    -
+      heading: Strawberry Red
+      color: strawberry-red
+    -
+      heading: Marine Turquoise
+      color: marine-turquoise
+    -
+      heading: Royal Purple
+      color: royal-purple
+    -
+      heading: Hot Pink
+      color: hot-pink
+    -
+      heading: Fresh Green
+      color: fresh-green
+-
+  Utility colors:
+    -
+      heading: Highlighter
+      color: highlighter

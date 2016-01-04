@@ -12,14 +12,22 @@
   }
 }
 
-.d-swatch {
-  float: left;
+.d-swatch__container {
   width: 150px;
-  height: 150px;
+  height: 90px;
+  text-align: center;
+}
+
+.d-swatch__swatch {
+  margin: auto;
+  margin-bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
 @each $name, $color in $pe-colors {
-  .d-swatch--#{$name} {
+  .d-swatch__swatch--#{$name} {
     background: $color;
     position: relative;
 
@@ -33,17 +41,9 @@
       align-items: center;
       justify-content: center;
     }
-
-    &:before {
-      content: '#{$name}';
-      color: white;
-      top: 0px;
-    }
-
-    &:after {
-      content: '#{$name}';
-      color: black;
-      bottom: 0px;
-    }
   }
+}
+
+.d-swatch__swatch--chalk-white {
+  border: solid 1px #cccccc;
 }
