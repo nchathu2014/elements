@@ -39,20 +39,19 @@
 //
 
 .pe-header__logo {
-  display: block;
+  display: inline-block;
+  float: left;
   margin: 0 $pe-header-logo-margin-x;
 }
 
 .pe-header__logo--pearson {
-  height: $pe-header-height;
-  width: 100px;
+  margin-top: ($pe-header-height - 40) / 2;
+  height: 40px;
+  width: 40px;
   background: url(#{$pe-images-path}#{$pe-header-logo-sprite-name}) no-repeat;
-  background-position: right ($pe-header-height - $pe-header-logo-sprite-height) / 2;
-  background-clip: content-box;
 
   @include pe-responsive-breakpoint(lg) {
-    height: $pe-header-height-lg;
-    background-position: right ($pe-header-height-lg - $pe-header-logo-sprite-height) / 2;
+    margin-top: ($pe-header-height-lg - 40) / 2;
   }
 }
 
@@ -114,16 +113,5 @@
 
   .pe-header__nav-item--active {
     background-color: $pe-header-nav-link-active-bg-inverse;
-  }
-
-  .pe-header__logo--pearson {
-    background-position: right (($pe-header-height - $pe-header-logo-sprite-height) / 2) - $pe-header-logo-sprite-height;
-    background-clip: content-box;
-    padding: (($pe-header-height - $pe-header-logo-sprite-height) / 2) 0;
-
-    @include pe-responsive-breakpoint(lg) {
-      background-position: right (($pe-header-height-lg - $pe-header-logo-sprite-height) / 2) - $pe-header-logo-sprite-height;
-      padding: (($pe-header-height-lg - $pe-header-logo-sprite-height) / 2) 0;
-    }
   }
 }

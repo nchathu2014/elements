@@ -69,6 +69,7 @@ For applications that require the Pearson logo, use a `<span>` element with `pe-
     <a href="#" aria-label="Return to home">
       <span class="pe-header__logo pe-header__logo--pearson"></span>
     </a>
+    <a href="#" class="pe-header__brand">Brand</a>
   </section>
 </header>
 {{/demo}}
@@ -88,6 +89,7 @@ Add `pe-header--inverse` to the root element to invert the header.
     <a href="#" aria-label="Return to home">
       <span class="pe-header__logo pe-header__logo--pearson"></span>
     </a>
+    <a href="#" class="pe-header__brand">Brand</a>
   </section>
   <section class="pe-header__section pe-header__section--right">
     <nav class="pe-header__nav">
