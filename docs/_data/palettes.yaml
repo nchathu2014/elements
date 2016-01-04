@@ -1,0 +1,17 @@
+-
+  Grey:
+    -
+      heading: "Grey, lightest"
+      color: grey-lightest
+    -
+      heading: "Grey, lighter"
+      color: grey-lighter
+    -
+      heading: "Grey"
+      color: grey
+    -
+      heading: "Grey, darker"
+      color: grey-darker
+    -
+      heading: "Grey, darkest"
+      color: grey-darkest

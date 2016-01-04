@@ -17,7 +17,8 @@
     },
     "metalsmith-metadata": {
       "nav": "_data/nav.yaml",
-      "colors": "_data/colors.yaml"
+      "colors": "_data/colors.yaml",
+      "palettes": "_data/palettes.yaml"
     },
     "metalsmith-register-helpers": {
       "directory": "./docs/_helpers"

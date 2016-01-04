@@ -40,6 +40,16 @@ $pe-colors: (
   highlighter: #fdec2e
 );
 
+$pe-palettes: (
+  grayscale: (
+    grey-lightest: scale-color(map-get-strict($pe-colors, graphite-grey), $lightness: 90%),
+    grey-lighter: scale-color(map-get-strict($pe-colors, graphite-grey), $lightness: 50%),
+    grey: scale-color(map-get-strict($pe-colors, graphite-grey), $lightness: 20%),
+    grey-darker: map-get-strict($pe-colors, graphite-grey),
+    grey-darkest: scale-color(map-get-strict($pe-colors, graphite-grey), $lightness: -50%)
+  )
+);
+
 // Responsive breakpoints
 //
 
