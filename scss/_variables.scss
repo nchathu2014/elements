@@ -238,10 +238,10 @@ $pe-card-heading-padding: 15px !default;
 
 $pe-header-height: 44px !default;
 $pe-header-height-lg: 54px !default;
-$pe-header-bg: pe-color(ink-black) !default;
+$pe-header-bg: pe-color(midnight-blue) !default;
 $pe-header-text-color: pe-color(chalk-white) !default;
-$pe-header-link-color: pe-color(graphite-grey) !default;
-$pe-header-link-hover-color: pe-color(graphite-grey) !default;
+$pe-header-link-color: pe-color(chalk-white) !default;
+$pe-header-link-hover-color: darken($pe-header-link-color, 10%) !default;
 
 $pe-header-brand-font-size: 1.25rem !default;
 
