@@ -1,19 +1,25 @@
+// Mixins and variables
+//
+
+@import 'mixins';
+@import 'variables';
+
+// Typefaces
+//
+
+@if $pe-import-web-fonts {
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+  @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic);
+}
+
 // normalize.css
 //
 
 @import 'normalize';
 
-// Typefaces
-//
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic);
-
 // Elements
 //
 
-@import 'mixins';
-@import 'variables';
 @import 'reset';
 @import 'aside';
 @import 'buttons';
