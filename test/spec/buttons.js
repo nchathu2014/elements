@@ -14,41 +14,73 @@ describe('buttons', () => {
       assertCssPropertiesAreEqual(getElementById('btn'), [
         ['height','28px'],
         ['padding-top','0px'],
-        ['padding-right','12px'],
+        ['padding-right','11px'],
         ['padding-bottom','0px'],
-        ['padding-left','12px'],
+        ['padding-left','11px'],
         ['color', 'rgb(86, 86, 86)'],
         ['font-size', '14px'],
-        ['line-height', '16px'],
+        ['line-height', '28px'],
         ['background-color','rgb(248, 248, 248)'],
-        ['border-width','1px'],
-        ['border-style','solid'],
-        ['border-color','rgb(208, 208, 208)'],
-        ['border-radius','3px'],
-        ['box-shadow', '0']
+
+        ['border-top-width','1px'],
+        ['border-right-width','1px'],
+        ['border-bottom-width','1px'],
+        ['border-left-width','1px'],
+
+        ['border-top-style','solid'],
+        ['border-right-style','solid'],
+        ['border-bottom-style','solid'],
+        ['border-left-style','solid'],
+
+        ['border-top-color','rgb(208, 208, 208)'],
+        ['border-right-color','rgb(208, 208, 208)'],
+        ['border-bottom-color','rgb(208, 208, 208)'],
+        ['border-left-color','rgb(208, 208, 208)'],
+
+        ['border-top-left-radius','3px'],
+        ['border-top-right-radius','3px'],
+        ['border-bottom-right-radius','3px'],
+        ['border-bottom-left-radius','3px'],
+
+        ['box-shadow', 'none']
       ]);
     });
 
-/*
     it('should match the design spec when default button is focused', () => {
-      let el = getElementById('btn').focus();
-      assertCssPropertiesAreEqual(el, [
+      assertCssPropertiesAreEqual(getElementById('btn').focus(), [
         ['height','28px'],
         ['padding-top','0px'],
-        ['padding-right','12px'],
+        ['padding-right','11px'],
         ['padding-bottom','0px'],
-        ['padding-left','12px'],
+        ['padding-left','11px'],
         ['color', 'rgb(86, 86, 86)'],
         ['font-size', '14px'],
-        ['line-height', '16px'],
+        ['line-height', '28px'],
         ['background-color','rgb(230, 230, 230)'],
-        ['border-width','1px'],
-        ['border-style','solid'],
-        ['border-color','rgb(179, 179, 179)'],
-        ['border-radius','3px'],
+
+        ['border-top-width','1px'],
+        ['border-right-width','1px'],
+        ['border-bottom-width','1px'],
+        ['border-left-width','1px'],
+
+        ['border-top-style','solid'],
+        ['border-right-style','solid'],
+        ['border-bottom-style','solid'],
+        ['border-left-style','solid'],
+
+        ['border-top-color','rgb(179, 179, 179)'],
+        ['border-right-color','rgb(179, 179, 179)'],
+        ['border-bottom-color','rgb(179, 179, 179)'],
+        ['border-left-color','rgb(179, 179, 179)'],
+
+        ['border-top-left-radius','3px'],
+        ['border-top-right-radius','3px'],
+        ['border-bottom-right-radius','3px'],
+        ['border-bottom-left-radius','3px'],
+
         ['box-shadow', 'rgba(0, 0, 0, 0.3)']
       ]);
-    });*/
+    });
   });
 
   describe('primary', () => {
@@ -57,18 +89,35 @@ describe('buttons', () => {
       assertCssPropertiesAreEqual(getElementById('btn-primary'), [
         ['height','28px'],
         ['padding-top','0px'],
-        ['padding-right','12px'],
+        ['padding-right','11px'],
         ['padding-bottom','0px'],
-        ['padding-left','12px'],
+        ['padding-left','11px'],
         ['color', 'rgb(255, 255, 255)'],
         ['font-size', '14px'],
-        ['line-height', '16px'],
-        ['background-color','rgb(16, 122, 128)'],
-        ['border-width','1px'],
-        ['border-style','solid'],
-        ['border-color','rgb(10, 77, 128)'],
-        ['border-radius','3px'],
-        ['box-shadow', '0']
+        ['line-height', '28px'],
+        ['background-color','rgb(16, 122, 202)'],
+
+        ['border-top-width','1px'],
+        ['border-right-width','1px'],
+        ['border-bottom-width','1px'],
+        ['border-left-width','1px'],
+
+        ['border-top-style','solid'],
+        ['border-right-style','solid'],
+        ['border-bottom-style','solid'],
+        ['border-left-style','solid'],
+
+        ['border-top-color','rgb(10, 77, 128)'],
+        ['border-right-color','rgb(10, 77, 128)'],
+        ['border-bottom-color','rgb(10, 77, 128)'],
+        ['border-left-color','rgb(10, 77, 128)'],
+
+        ['border-top-left-radius','3px'],
+        ['border-top-right-radius','3px'],
+        ['border-bottom-right-radius','3px'],
+        ['border-bottom-left-radius','3px'],
+
+        ['box-shadow', 'none']
       ]);
     });
 /*
@@ -77,17 +126,34 @@ describe('buttons', () => {
       assertCssPropertiesAreEqual(el, [
         ['height','28px'],
         ['padding-top','0px'],
-        ['padding-right','12px'],
+        ['padding-right','11px'],
         ['padding-bottom','0px'],
-        ['padding-left','12px'],
+        ['padding-left','11px'],
         ['color', 'rgb(255, 255, 255)'],
         ['font-size', '14px'],
-        ['line-height', '16px'],
+        ['line-height', '28px'],
         ['background-color','rgb(12, 93, 153)'],
-        ['border-width','1px'],
-        ['border-style','solid'],
-        ['border-color','rgb(10, 77, 128)'],
-        ['border-radius','3px'],
+
+        ['border-top-width','1px'],
+        ['border-right-width','1px'],
+        ['border-bottom-width','1px'],
+        ['border-left-width','1px'],
+
+        ['border-top-style','solid'],
+        ['border-right-style','solid'],
+        ['border-bottom-style','solid'],
+        ['border-left-style','solid'],
+
+        ['border-top-color','rgb(10, 77, 128)'],
+        ['border-right-color','rgb(10, 77, 128)'],
+        ['border-bottom-color','rgb(10, 77, 128)'],
+        ['border-left-color','rgb(10, 77, 128)'],
+
+        ['border-top-left-radius','3px'],
+        ['border-top-right-radius','3px'],
+        ['border-bottom-right-radius','3px'],
+        ['border-bottom-left-radius','3px'],
+
         ['box-shadow', 'rgb(0, 0, 0)']
       ]);
     });*/
@@ -97,27 +163,28 @@ describe('buttons', () => {
 
     it('should match the design spec when styled as a link', () => {
       assertCssPropertiesAreEqual(getElementById('btn-link'), [
-        ['padding','0px'],
+        ['padding',''],
         ['color', 'rgb(13, 101, 166)'],
         ['font-size', '14px'],
-        ['line-height', '16px'],
+        ['line-height', '28px'],
         ['text-decoration', 'underline'],
         ['background-color','none'],
         ['border-width','0px'],
-        ['box-shadow', '0']
+        ['box-shadow', 'none']
       ]);
     });
 /*
     it('should match the design spec when styled as a focused link', () => {
       let el = getElementById('btn-link').focus();
       assertCssPropertiesAreEqual(el, [
+        ['padding',''],
         ['color', 'rgb(9, 72, 119)'],
         ['font-size', '14px'],
-        ['line-height', '16px'],
+        ['line-height', '28px'],
         ['text-decoration', 'none'],
         ['background-color','none'],
         ['border-width','0px'],
-        ['box-shadow', '0']
+        ['box-shadow', 'none']
       ]);
     });*/
   });
@@ -128,18 +195,35 @@ describe('buttons', () => {
       assertCssPropertiesAreEqual(getElementById('btn-div'), [
         ['height','28px'],
         ['padding-top','0px'],
-        ['padding-right','12px'],
+        ['padding-right','11px'],
         ['padding-bottom','0px'],
-        ['padding-left','12px'],
+        ['padding-left','11px'],
         ['color', 'rgb(86, 86, 86)'],
         ['font-size', '14px'],
-        ['line-height', '16px'],
+        ['line-height', '28px'],
         ['background-color','rgb(248, 248, 248)'],
-        ['border-width','1px'],
-        ['border-style','solid'],
-        ['border-color','rgb(208, 208, 208)'],
-        ['border-radius','3px'],
-        ['box-shadow', '0']
+
+        ['border-top-width','1px'],
+        ['border-right-width','1px'],
+        ['border-bottom-width','1px'],
+        ['border-left-width','1px'],
+
+        ['border-top-style','solid'],
+        ['border-right-style','solid'],
+        ['border-bottom-style','solid'],
+        ['border-left-style','solid'],
+
+        ['border-top-color','rgb(208, 208, 208)'],
+        ['border-right-color','rgb(208, 208, 208)'],
+        ['border-bottom-color','rgb(208, 208, 208)'],
+        ['border-left-color','rgb(208, 208, 208)'],
+
+        ['border-top-left-radius','3px'],
+        ['border-top-right-radius','3px'],
+        ['border-bottom-right-radius','3px'],
+        ['border-bottom-left-radius','3px'],
+
+        ['box-shadow', 'none']
       ]);
     });
 /*
@@ -148,17 +232,34 @@ describe('buttons', () => {
       assertCssPropertiesAreEqual(el, [
         ['height','28px'],
         ['padding-top','0px'],
-        ['padding-right','12px'],
+        ['padding-right','11px'],
         ['padding-bottom','0px'],
-        ['padding-left','12px'],
+        ['padding-left','11px'],
         ['color', 'rgb(86, 86, 86)'],
         ['font-size', '14px'],
-        ['line-height', '16px'],
+        ['line-height', '28px'],
         ['background-color','rgb(230, 230, 230)'],
-        ['border-width','1px'],
-        ['border-style','solid'],
-        ['border-color','rgb(179, 179, 179)'],
-        ['border-radius','3px'],
+
+        ['border-top-width','1px'],
+        ['border-right-width','1px'],
+        ['border-bottom-width','1px'],
+        ['border-left-width','1px'],
+
+        ['border-top-style','solid'],
+        ['border-right-style','solid'],
+        ['border-bottom-style','solid'],
+        ['border-left-style','solid'],
+
+        ['border-top-color','rgb(179, 179, 179)'],
+        ['border-right-color','rgb(179, 179, 179)'],
+        ['border-bottom-color','rgb(179, 179, 179)'],
+        ['border-left-color','rgb(179, 179, 179)'],
+
+        ['border-top-left-radius','3px'],
+        ['border-top-right-radius','3px'],
+        ['border-bottom-right-radius','3px'],
+        ['border-bottom-left-radius','3px'],
+
         ['box-shadow', 'rgba(0, 0, 0, 0.3)']
       ]);
     });*/
@@ -170,19 +271,36 @@ describe('buttons', () => {
       assertCssPropertiesAreEqual(getElementById('btn-anchor'), [
         ['height','28px'],
         ['padding-top','0px'],
-        ['padding-right','12px'],
+        ['padding-right','11px'],
         ['padding-bottom','0px'],
-        ['padding-left','12px'],
+        ['padding-left','11px'],
         ['color', 'rgb(86, 86, 86)'],
         ['font-size', '14px'],
-        ['line-height', '16px'],
+        ['line-height', '28px'],
         ['text-decoration', 'none'],
         ['background-color','rgb(248, 248, 248)'],
-        ['border-width','1px'],
-        ['border-style','solid'],
-        ['border-color','rgb(208, 208, 208)'],
-        ['border-radius','3px'],
-        ['box-shadow', '0']
+
+        ['border-top-width','1px'],
+        ['border-right-width','1px'],
+        ['border-bottom-width','1px'],
+        ['border-left-width','1px'],
+
+        ['border-top-style','solid'],
+        ['border-right-style','solid'],
+        ['border-bottom-style','solid'],
+        ['border-left-style','solid'],
+
+        ['border-top-color','rgb(208, 208, 208)'],
+        ['border-right-color','rgb(208, 208, 208)'],
+        ['border-bottom-color','rgb(208, 208, 208)'],
+        ['border-left-color','rgb(208, 208, 208)'],
+
+        ['border-top-left-radius','3px'],
+        ['border-top-right-radius','3px'],
+        ['border-bottom-right-radius','3px'],
+        ['border-bottom-left-radius','3px'],
+
+        ['box-shadow', 'none']
       ]);
     });
 /*
@@ -191,18 +309,35 @@ describe('buttons', () => {
       assertCssPropertiesAreEqual(el, [
         ['height','28px'],
         ['padding-top','0px'],
-        ['padding-right','12px'],
+        ['padding-right','11px'],
         ['padding-bottom','0px'],
-        ['padding-left','12px'],
+        ['padding-left','11px'],
         ['color', 'rgb(86, 86, 86)'],
         ['font-size', '14px'],
-        ['line-height', '16px'],
+        ['line-height', '28px'],
         ['text-decoration', 'none'],
         ['background-color','rgb(230, 230, 230)'],
-        ['border-width','1px'],
-        ['border-style','solid'],
-        ['border-color','rgb(179, 179, 179)'],
-        ['border-radius','3px'],
+
+        ['border-top-width','1px'],
+        ['border-right-width','1px'],
+        ['border-bottom-width','1px'],
+        ['border-left-width','1px'],
+
+        ['border-top-style','solid'],
+        ['border-right-style','solid'],
+        ['border-bottom-style','solid'],
+        ['border-left-style','solid'],
+
+        ['border-top-color','rgb(179, 179, 179)'],
+        ['border-right-color','rgb(179, 179, 179)'],
+        ['border-bottom-color','rgb(179, 179, 179)'],
+        ['border-left-color','rgb(179, 179, 179)'],
+
+        ['border-top-left-radius','3px'],
+        ['border-top-right-radius','3px'],
+        ['border-bottom-right-radius','3px'],
+        ['border-bottom-left-radius','3px'],
+
         ['box-shadow', 'rgba(0, 0, 0, 0.3)']
       ]);
     });*/
@@ -214,19 +349,36 @@ describe('buttons', () => {
       assertCssPropertiesAreEqual(getElementById('btn-input'), [
         ['height','28px'],
         ['padding-top','0px'],
-        ['padding-right','12px'],
+        ['padding-right','11px'],
         ['padding-bottom','0px'],
-        ['padding-left','12px'],
+        ['padding-left','11px'],
         ['color', 'rgb(86, 86, 86)'],
         ['font-size', '14px'],
-        ['line-height', '16px'],
+        ['line-height', '28px'],
         ['text-decoration', 'none'],
         ['background-color','rgb(248, 248, 248)'],
-        ['border-width','1px'],
-        ['border-style','solid'],
-        ['border-color','rgb(208, 208, 208)'],
-        ['border-radius','3px'],
-        ['box-shadow', '0']
+
+        ['border-top-width','1px'],
+        ['border-right-width','1px'],
+        ['border-bottom-width','1px'],
+        ['border-left-width','1px'],
+
+        ['border-top-style','solid'],
+        ['border-right-style','solid'],
+        ['border-bottom-style','solid'],
+        ['border-left-style','solid'],
+
+        ['border-top-color','rgb(208, 208, 208)'],
+        ['border-right-color','rgb(208, 208, 208)'],
+        ['border-bottom-color','rgb(208, 208, 208)'],
+        ['border-left-color','rgb(208, 208, 208)'],
+
+        ['border-top-left-radius','3px'],
+        ['border-top-right-radius','3px'],
+        ['border-bottom-right-radius','3px'],
+        ['border-bottom-left-radius','3px'],
+
+        ['box-shadow', 'none']
       ]);
     });
 /*
@@ -235,17 +387,34 @@ describe('buttons', () => {
       assertCssPropertiesAreEqual(el, [
         ['height','28px'],
         ['padding-top','0px'],
-        ['padding-right','12px'],
+        ['padding-right','11px'],
         ['padding-bottom','0px'],
-        ['padding-left','12px'],
+        ['padding-left','11px'],
         ['color', 'rgb(86, 86, 86)'],
         ['font-size', '14px'],
-        ['line-height', '16px'],
+        ['line-height', '28px'],
         ['background-color','rgb(230, 230, 230)'],
-        ['border-width','1px'],
-        ['border-style','solid'],
-        ['border-color','rgb(179, 179, 179)'],
-        ['border-radius','3px'],
+
+        ['border-top-width','1px'],
+        ['border-right-width','1px'],
+        ['border-bottom-width','1px'],
+        ['border-left-width','1px'],
+
+        ['border-top-style','solid'],
+        ['border-right-style','solid'],
+        ['border-bottom-style','solid'],
+        ['border-left-style','solid'],
+
+        ['border-top-color','rgb(179, 179, 179)'],
+        ['border-right-color','rgb(179, 179, 179)'],
+        ['border-bottom-color','rgb(179, 179, 179)'],
+        ['border-left-color','rgb(179, 179, 179)'],
+
+        ['border-top-left-radius','3px'],
+        ['border-top-right-radius','3px'],
+        ['border-bottom-right-radius','3px'],
+        ['border-bottom-left-radius','3px'],
+
         ['box-shadow', 'rgba(0, 0, 0, 0.3)']
       ]);
     });*/
@@ -257,12 +426,12 @@ describe('buttons', () => {
       assertCssPropertiesAreEqual(getElementById('btn-small'), [
         ['height','24px'],
         ['padding-top','0px'],
-        ['padding-right','10px'],
+        ['padding-right','9px'],
         ['padding-bottom','0px'],
-        ['padding-left','10px'],
-        ['font-size', ['13px', '13.008px']],
-        //['font-size', ['13px'],
-        ['line-height', '15px']
+        ['padding-left','9px'],
+        //['font-size', ['13px', '13.008px']],
+        ['font-size', '13px'],
+        ['line-height', '24px']
       ]);
     });
 
@@ -270,11 +439,11 @@ describe('buttons', () => {
       assertCssPropertiesAreEqual(getElementById('btn-large'), [
         ['height','42px'],
         ['padding-top','0px'],
-        ['padding-right','20px'],
+        ['padding-right','19px'],
         ['padding-bottom','0px'],
-        ['padding-left','20px'],
+        ['padding-left','19px'],
         ['font-size', '16px'],
-        ['line-height', '18px']
+        ['line-height', '42px']
       ]);
     });
   });
@@ -285,16 +454,25 @@ describe('buttons', () => {
       assertCssPropertiesAreEqual(getElementById('btn-disabled'), [
         ['height','28px'],
         ['padding-top','0px'],
-        ['padding-right','12px'],
+        ['padding-right','11px'],
         ['padding-bottom','0px'],
-        ['padding-left','12px'],
+        ['padding-left','11px'],
         ['color', 'rgb(166, 168, 171)'],
         ['font-size', '14px'],
-        ['line-height', '16px'],
+        ['line-height', '28px'],
         ['background-color','rgb(242, 242, 242)'],
-        ['border-width','0px'],
-        ['border-color','none'],
-        ['box-shadow', '0']
+
+        ['border-top-width','0px'],
+        ['border-right-width','0px'],
+        ['border-bottom-width','0px'],
+        ['border-left-width','0px'],
+
+        ['border-top-style','none'],
+        ['border-right-style','none'],
+        ['border-bottom-style','none'],
+        ['border-left-style','none'],
+
+        ['box-shadow', 'none']
       ]);
     });
 
@@ -302,29 +480,29 @@ describe('buttons', () => {
       assertCssPropertiesAreEqual(getElementById('btn-primary-disabled'), [
         ['height','28px'],
         ['padding-top','0px'],
-        ['padding-right','12px'],
+        ['padding-right','11px'],
         ['padding-bottom','0px'],
-        ['padding-left','12px'],
+        ['padding-left','11px'],
         ['color', 'rgb(255, 255, 255)'],
         ['font-size', '14px'],
-        ['line-height', '16px'],
+        ['line-height', '28px'],
         ['background-color','rgb(157, 192, 219)'],
-        ['border-width','0px'],
-        ['border-color','none'],
-        ['box-shadow', '0']
+        ['border-width',''],
+        ['border-color',''],
+        ['box-shadow', 'none']
       ]);
     });
 
     it('should match the design spec when the link button is disabled', () => {
       assertCssPropertiesAreEqual(getElementById('btn-link-disabled'), [
-        ['padding','0px'],
+        ['padding',''],
         ['color', 'rgb(157, 192, 219)'],
         ['font-size', '14px'],
-        ['line-height', '16px'],
+        ['line-height', '28px'],
         ['text-decoration', 'none'],
         ['background-color','none'],
-        ['border-width','0px'],
-        ['box-shadow', '0']
+        ['border-width',''],
+        ['box-shadow', 'none']
       ]);
     });
   });
@@ -335,16 +513,16 @@ describe('buttons', () => {
       assertCssPropertiesAreEqual(getElementById('btn-div-disabled'), [
         ['height','28px'],
         ['padding-top','0px'],
-        ['padding-right','12px'],
+        ['padding-right','11px'],
         ['padding-bottom','0px'],
-        ['padding-left','12px'],
+        ['padding-left','11px'],
         ['color', 'rgb(166, 168, 171)'],
         ['font-size', '14px'],
-        ['line-height', '16px'],
+        ['line-height', '28px'],
         ['background-color','rgb(242, 242, 242)'],
-        ['border-width','0px'],
-        ['border-color','none'],
-        ['box-shadow', '0']
+        ['border-width',''],
+        ['border-color',''],
+        ['box-shadow', 'none']
       ]);
     });
 
@@ -352,17 +530,17 @@ describe('buttons', () => {
       assertCssPropertiesAreEqual(getElementById('btn-anchor-disabled'), [
         ['height','28px'],
         ['padding-top','0px'],
-        ['padding-right','12px'],
+        ['padding-right','11px'],
         ['padding-bottom','0px'],
-        ['padding-left','12px'],
+        ['padding-left','11px'],
         ['color', 'rgb(166, 168, 171)'],
         ['font-size', '14px'],
-        ['line-height', '16px'],
+        ['line-height', '28px'],
         ['text-decoration', 'none'],
         ['background-color','rgb(242, 242, 242)'],
-        ['border-width','0px'],
-        ['border-color','none'],
-        ['box-shadow', '0']
+        ['border-width',''],
+        ['border-color',''],
+        ['box-shadow', 'none']
       ]);
     });
     
@@ -370,16 +548,16 @@ describe('buttons', () => {
       assertCssPropertiesAreEqual(getElementById('btn-input-disabled'), [
         ['height','28px'],
         ['padding-top','0px'],
-        ['padding-right','12px'],
+        ['padding-right','11px'],
         ['padding-bottom','0px'],
-        ['padding-left','12px'],
+        ['padding-left','11px'],
         ['color', 'rgb(166, 168, 171)'],
         ['font-size', '14px'],
-        ['line-height', '16px'],
+        ['line-height', '28px'],
         ['background-color','rgb(242, 242, 242)'],
-        ['border-width','0px'],
-        ['border-color','none'],
-        ['box-shadow', '0']
+        ['border-width',''],
+        ['border-color',''],
+        ['box-shadow', 'none']
       ]);
     });
   });
