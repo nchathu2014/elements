@@ -10,87 +10,269 @@ describe('buttons', () => {
 
   describe('default', () => {
 
-    it('should match the design spec', () => {
+    it('should match the design spec for default button', () => {
       assertCssPropertiesAreEqual(getElementById('btn'), [
-        ['color', 'rgb(35, 31, 32)'],
+        ['height','28px'],
+        ['padding-top','0px'],
+        ['padding-right','12px'],
+        ['padding-bottom','0px'],
+        ['padding-left','12px'],
+        ['color', 'rgb(86, 86, 86)'],
         ['font-size', '14px'],
         ['line-height', '16px'],
-        ['font-weight', ['normal', '400']]
+        ['background-color','rgb(248, 248, 248)'],
+        ['border-width','1px'],
+        ['border-style','solid'],
+        ['border-color','rgb(208, 208, 208)'],
+        ['border-radius','3px'],
+        ['box-shadow', '0']
       ]);
     });
+
+/*
+    it('should match the design spec when default button is focused', () => {
+      let el = getElementById('btn').focus();
+      assertCssPropertiesAreEqual(el, [
+        ['height','28px'],
+        ['padding-top','0px'],
+        ['padding-right','12px'],
+        ['padding-bottom','0px'],
+        ['padding-left','12px'],
+        ['color', 'rgb(86, 86, 86)'],
+        ['font-size', '14px'],
+        ['line-height', '16px'],
+        ['background-color','rgb(230, 230, 230)'],
+        ['border-width','1px'],
+        ['border-style','solid'],
+        ['border-color','rgb(179, 179, 179)'],
+        ['border-radius','3px'],
+        ['box-shadow', 'rgba(0, 0, 0, 0.3)']
+      ]);
+    });*/
   });
 
   describe('primary', () => {
 
     it('should match the design spec', () => {
       assertCssPropertiesAreEqual(getElementById('btn-primary'), [
-        ['color', 'rgb(86, 86, 86)'],
+        ['height','28px'],
+        ['padding-top','0px'],
+        ['padding-right','12px'],
+        ['padding-bottom','0px'],
+        ['padding-left','12px'],
+        ['color', 'rgb(255, 255, 255)'],
         ['font-size', '14px'],
         ['line-height', '16px'],
-        ['font-weight', ['normal', '400']]
+        ['background-color','rgb(16, 122, 128)'],
+        ['border-width','1px'],
+        ['border-style','solid'],
+        ['border-color','rgb(10, 77, 128)'],
+        ['border-radius','3px'],
+        ['box-shadow', '0']
       ]);
     });
+/*
+    it('should match the design spec when default button is focused', () => {
+      let el = getElementById('btn-primary').focus();
+      assertCssPropertiesAreEqual(el, [
+        ['height','28px'],
+        ['padding-top','0px'],
+        ['padding-right','12px'],
+        ['padding-bottom','0px'],
+        ['padding-left','12px'],
+        ['color', 'rgb(255, 255, 255)'],
+        ['font-size', '14px'],
+        ['line-height', '16px'],
+        ['background-color','rgb(12, 93, 153)'],
+        ['border-width','1px'],
+        ['border-style','solid'],
+        ['border-color','rgb(10, 77, 128)'],
+        ['border-radius','3px'],
+        ['box-shadow', 'rgb(0, 0, 0)']
+      ]);
+    });*/
   });
 
   describe('link', () => {
 
-    it('should match the design spec', () => {
+    it('should match the design spec when styled as a link', () => {
       assertCssPropertiesAreEqual(getElementById('btn-link'), [
-        ['color', 'rgb(86, 86, 86)'],
+        ['padding','0px'],
+        ['color', 'rgb(13, 101, 166)'],
         ['font-size', '14px'],
         ['line-height', '16px'],
-        ['font-weight', ['normal', '400']]
+        ['text-decoration', 'underline'],
+        ['background-color','none'],
+        ['border-width','0px'],
+        ['box-shadow', '0']
       ]);
     });
+/*
+    it('should match the design spec when styled as a focused link', () => {
+      let el = getElementById('btn-link').focus();
+      assertCssPropertiesAreEqual(el, [
+        ['color', 'rgb(9, 72, 119)'],
+        ['font-size', '14px'],
+        ['line-height', '16px'],
+        ['text-decoration', 'none'],
+        ['background-color','none'],
+        ['border-width','0px'],
+        ['box-shadow', '0']
+      ]);
+    });*/
   });
 
   describe('fake-div', () => {
 
-    it('should match the design spec', () => {
+    it('should match the design spec when a div is styled as a button', () => {
       assertCssPropertiesAreEqual(getElementById('btn-div'), [
+        ['height','28px'],
+        ['padding-top','0px'],
+        ['padding-right','12px'],
+        ['padding-bottom','0px'],
+        ['padding-left','12px'],
         ['color', 'rgb(86, 86, 86)'],
         ['font-size', '14px'],
         ['line-height', '16px'],
-        ['font-weight', ['normal', '400']]
+        ['background-color','rgb(248, 248, 248)'],
+        ['border-width','1px'],
+        ['border-style','solid'],
+        ['border-color','rgb(208, 208, 208)'],
+        ['border-radius','3px'],
+        ['box-shadow', '0']
       ]);
     });
+/*
+    it('should match the design spec when a focused div is styled as a button', () => {
+      let el = getElementById('btn-div').focus();
+      assertCssPropertiesAreEqual(el, [
+        ['height','28px'],
+        ['padding-top','0px'],
+        ['padding-right','12px'],
+        ['padding-bottom','0px'],
+        ['padding-left','12px'],
+        ['color', 'rgb(86, 86, 86)'],
+        ['font-size', '14px'],
+        ['line-height', '16px'],
+        ['background-color','rgb(230, 230, 230)'],
+        ['border-width','1px'],
+        ['border-style','solid'],
+        ['border-color','rgb(179, 179, 179)'],
+        ['border-radius','3px'],
+        ['box-shadow', 'rgba(0, 0, 0, 0.3)']
+      ]);
+    });*/
   });
 
   describe('fake-anchor', () => {
 
-    it('should match the design spec', () => {
+    it('should match the design spec when an anchor is styled as a button', () => {
       assertCssPropertiesAreEqual(getElementById('btn-anchor'), [
+        ['height','28px'],
+        ['padding-top','0px'],
+        ['padding-right','12px'],
+        ['padding-bottom','0px'],
+        ['padding-left','12px'],
         ['color', 'rgb(86, 86, 86)'],
         ['font-size', '14px'],
         ['line-height', '16px'],
-        ['font-weight', ['normal', '400']]
+        ['text-decoration', 'none'],
+        ['background-color','rgb(248, 248, 248)'],
+        ['border-width','1px'],
+        ['border-style','solid'],
+        ['border-color','rgb(208, 208, 208)'],
+        ['border-radius','3px'],
+        ['box-shadow', '0']
       ]);
     });
+/*
+    it('should match the design spec when a focused anchor is styled as a button', () => {
+      let el = getElementById('btn-anchor').focus();
+      assertCssPropertiesAreEqual(el, [
+        ['height','28px'],
+        ['padding-top','0px'],
+        ['padding-right','12px'],
+        ['padding-bottom','0px'],
+        ['padding-left','12px'],
+        ['color', 'rgb(86, 86, 86)'],
+        ['font-size', '14px'],
+        ['line-height', '16px'],
+        ['text-decoration', 'none'],
+        ['background-color','rgb(230, 230, 230)'],
+        ['border-width','1px'],
+        ['border-style','solid'],
+        ['border-color','rgb(179, 179, 179)'],
+        ['border-radius','3px'],
+        ['box-shadow', 'rgba(0, 0, 0, 0.3)']
+      ]);
+    });*/
   });
 
   describe('fake-input', () => {
 
-    it('should match the design spec', () => {
+    it('should match the design spec when an input is styled as a button', () => {
       assertCssPropertiesAreEqual(getElementById('btn-input'), [
+        ['height','28px'],
+        ['padding-top','0px'],
+        ['padding-right','12px'],
+        ['padding-bottom','0px'],
+        ['padding-left','12px'],
         ['color', 'rgb(86, 86, 86)'],
         ['font-size', '14px'],
         ['line-height', '16px'],
-        ['font-weight', ['normal', '400']]
+        ['text-decoration', 'none'],
+        ['background-color','rgb(248, 248, 248)'],
+        ['border-width','1px'],
+        ['border-style','solid'],
+        ['border-color','rgb(208, 208, 208)'],
+        ['border-radius','3px'],
+        ['box-shadow', '0']
       ]);
     });
+/*
+    it('should match the design spec when a focused input is styled as a button', () => {
+      let el = getElementById('btn-input').focus();
+      assertCssPropertiesAreEqual(el, [
+        ['height','28px'],
+        ['padding-top','0px'],
+        ['padding-right','12px'],
+        ['padding-bottom','0px'],
+        ['padding-left','12px'],
+        ['color', 'rgb(86, 86, 86)'],
+        ['font-size', '14px'],
+        ['line-height', '16px'],
+        ['background-color','rgb(230, 230, 230)'],
+        ['border-width','1px'],
+        ['border-style','solid'],
+        ['border-color','rgb(179, 179, 179)'],
+        ['border-radius','3px'],
+        ['box-shadow', 'rgba(0, 0, 0, 0.3)']
+      ]);
+    });*/
   });
 
   describe('sizes', () => {
 
     it('should match the design spec when the button is small', () => {
       assertCssPropertiesAreEqual(getElementById('btn-small'), [
+        ['height','24px'],
+        ['padding-top','0px'],
+        ['padding-right','10px'],
+        ['padding-bottom','0px'],
+        ['padding-left','10px'],
         ['font-size', ['13px', '13.008px']],
+        //['font-size', ['13px'],
         ['line-height', '15px']
       ]);
     });
 
     it('should match the design spec when the button is large', () => {
       assertCssPropertiesAreEqual(getElementById('btn-large'), [
+        ['height','42px'],
+        ['padding-top','0px'],
+        ['padding-right','20px'],
+        ['padding-bottom','0px'],
+        ['padding-left','20px'],
         ['font-size', '16px'],
         ['line-height', '18px']
       ]);
@@ -101,19 +283,48 @@ describe('buttons', () => {
 
     it('should match the design spec when the button is disabled', () => {
       assertCssPropertiesAreEqual(getElementById('btn-disabled'), [
-        ['font-weight', ['bold', '700']]
+        ['height','28px'],
+        ['padding-top','0px'],
+        ['padding-right','12px'],
+        ['padding-bottom','0px'],
+        ['padding-left','12px'],
+        ['color', 'rgb(166, 168, 171)'],
+        ['font-size', '14px'],
+        ['line-height', '16px'],
+        ['background-color','rgb(242, 242, 242)'],
+        ['border-width','0px'],
+        ['border-color','none'],
+        ['box-shadow', '0']
       ]);
     });
 
     it('should match the design spec when the primary button is disabled', () => {
       assertCssPropertiesAreEqual(getElementById('btn-primary-disabled'), [
-        ['font-weight', ['bold', '700']]
+        ['height','28px'],
+        ['padding-top','0px'],
+        ['padding-right','12px'],
+        ['padding-bottom','0px'],
+        ['padding-left','12px'],
+        ['color', 'rgb(255, 255, 255)'],
+        ['font-size', '14px'],
+        ['line-height', '16px'],
+        ['background-color','rgb(157, 192, 219)'],
+        ['border-width','0px'],
+        ['border-color','none'],
+        ['box-shadow', '0']
       ]);
     });
 
     it('should match the design spec when the link button is disabled', () => {
       assertCssPropertiesAreEqual(getElementById('btn-link-disabled'), [
-        ['font-weight', ['bold', '700']]
+        ['padding','0px'],
+        ['color', 'rgb(157, 192, 219)'],
+        ['font-size', '14px'],
+        ['line-height', '16px'],
+        ['text-decoration', 'none'],
+        ['background-color','none'],
+        ['border-width','0px'],
+        ['box-shadow', '0']
       ]);
     });
   });
@@ -122,19 +333,53 @@ describe('buttons', () => {
 
     it('should match the design spec when fake-button div is disabled', () => {
       assertCssPropertiesAreEqual(getElementById('btn-div-disabled'), [
-        ['color', 'rgb(255, 255, 255)']
+        ['height','28px'],
+        ['padding-top','0px'],
+        ['padding-right','12px'],
+        ['padding-bottom','0px'],
+        ['padding-left','12px'],
+        ['color', 'rgb(166, 168, 171)'],
+        ['font-size', '14px'],
+        ['line-height', '16px'],
+        ['background-color','rgb(242, 242, 242)'],
+        ['border-width','0px'],
+        ['border-color','none'],
+        ['box-shadow', '0']
       ]);
     });
 
     it('should match the design spec when fake-button anchor is disabled', () => {
       assertCssPropertiesAreEqual(getElementById('btn-anchor-disabled'), [
-        ['color', 'rgb(255, 255, 255)']
+        ['height','28px'],
+        ['padding-top','0px'],
+        ['padding-right','12px'],
+        ['padding-bottom','0px'],
+        ['padding-left','12px'],
+        ['color', 'rgb(166, 168, 171)'],
+        ['font-size', '14px'],
+        ['line-height', '16px'],
+        ['text-decoration', 'none'],
+        ['background-color','rgb(242, 242, 242)'],
+        ['border-width','0px'],
+        ['border-color','none'],
+        ['box-shadow', '0']
       ]);
     });
     
     it('should match the design spec when fake-button input is disabled', () => {
       assertCssPropertiesAreEqual(getElementById('btn-input-disabled'), [
-        ['color', 'rgb(255, 255, 255)']
+        ['height','28px'],
+        ['padding-top','0px'],
+        ['padding-right','12px'],
+        ['padding-bottom','0px'],
+        ['padding-left','12px'],
+        ['color', 'rgb(166, 168, 171)'],
+        ['font-size', '14px'],
+        ['line-height', '16px'],
+        ['background-color','rgb(242, 242, 242)'],
+        ['border-width','0px'],
+        ['border-color','none'],
+        ['box-shadow', '0']
       ]);
     });
   });
