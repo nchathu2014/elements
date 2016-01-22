@@ -46,6 +46,7 @@ describe('buttons', () => {
       ]);
     });
 
+/*
     it('should match the design spec when default button is focused', () => {
       assertCssPropertiesAreEqual(getElementById('btn').focus(), [
         ['height','28px'],
@@ -80,7 +81,7 @@ describe('buttons', () => {
 
         ['box-shadow', 'rgba(0, 0, 0, 0.3)']
       ]);
-    });
+    });*/
   });
 
   describe('primary', () => {
