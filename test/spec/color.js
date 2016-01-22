@@ -4,7 +4,9 @@ describe('color', () => {
       // following is configured in karma.conf.js for jsonFixturesPreprocessor
       json_fixture = window.__json__['test/fixtures/' + color_path + 'colors'];
 
-  fixture.load(color_path + 'colors.html');
+  beforeEach(() => {
+    fixture.load(color_path + 'colors.html');
+  });
 
   describe('color sets', () => {
 
